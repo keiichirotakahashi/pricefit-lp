@@ -31,9 +31,9 @@ const faq = [
   },
 ];
 
-const FAQ07 = () => {
+const FAQ = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center px-6 py-12">
+    <div className="flex items-center justify-center px-6 py-12">
       <div className="w-full max-w-2xl">
         <h2 className="text-4xl md:text-5xl !leading-[1.15] font-bold tracking-tight">
           Frequently Asked Questions
@@ -69,4 +69,4 @@ const FAQ07 = () => {
   );
 };
 
-export default FAQ07;
+export default FAQ;

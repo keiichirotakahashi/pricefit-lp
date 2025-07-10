@@ -29,11 +29,11 @@ const footerLinks = [
   },
 ];
 
-const Footer05Page = () => {
+const Footer = () => {
   return (
     <div className="flex flex-col">
       <div className="grow bg-muted" />
-      <footer>
+      <footer className="dark bg-background text-foreground">
         <div className="max-w-screen-xl mx-auto">
           <div className="py-12 flex flex-col justify-start items-center">
             {/* Logo */}
@@ -100,4 +100,4 @@ const Footer05Page = () => {
   );
 };
 
-export default Footer05Page;
+export default Footer;

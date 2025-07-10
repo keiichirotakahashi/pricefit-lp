@@ -25,7 +25,7 @@ const steps = [
   },
 ];
 
-export default function Timeline05() {
+export default function Flow() {
   return (
     <div className="max-w-screen-sm mx-auto py-12 md:py-20 px-6">
       <div className="relative ml-6">

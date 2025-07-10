@@ -1,25 +1,25 @@
-import Contact02Page from "@/components/contact-02/contact-02";
+import Contact from "@/components/contact/contact";
 import CTABanner from "@/components/cta-banner/cta-banner";
-import FAQ07 from "@/components/faq-07/faq-07";
-import Features02Page from "@/components/features-02/features-02";
-import Features06Page from "@/components/features-06/features-06";
-import Footer05Page from "@/components/footer-05/footer-05";
-import Hero02 from "@/components/hero-02/hero-02";
-import Navbar04Page from "@/components/navbar-04/navbar-04";
-import Timeline05 from "@/components/timeline-05/timeline-05";
+import FAQ from "@/components/faq/faq";
+import Flow from "@/components/flow/flow";
+import Footer from "@/components/footer/footer";
+import Hero from "@/components/hero/hero";
+import Navbar from "@/components/navbar/navbar";
+import Problems from "@/components/problems/problems";
+import Solutions from "@/components/solutions/solutions";
 
 export default function Home() {
   return (
     <div>
-      <Navbar04Page />
-      <Hero02 />
-      <Features02Page />
-      <Features06Page />
-      <Timeline05 />
+      <Navbar />
+      <Hero />
+      <Problems />
+      <Solutions />
+      <Flow />
       <CTABanner />
-      <FAQ07 />
-      <Contact02Page />
-      <Footer05Page />
+      <FAQ />
+      <Contact />
+      <Footer />
     </div>
   );
 }

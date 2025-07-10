@@ -13,7 +13,7 @@ const features = [
   },
 ];
 
-const Features02Page = () => {
+const Problems = () => {
   return (
     <div className="min-h-screen flex items-center justify-center py-12">
       <div className="w-full">
@@ -36,4 +36,4 @@ const Features02Page = () => {
   );
 };
 
-export default Features02Page;
+export default Problems;
