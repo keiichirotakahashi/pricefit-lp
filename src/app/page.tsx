@@ -1,4 +1,5 @@
 import Contact02Page from "@/components/contact-02/contact-02";
+import CTABanner from "@/components/cta-banner/cta-banner";
 import FAQ07 from "@/components/faq-07/faq-07";
 import Features02Page from "@/components/features-02/features-02";
 import Features06Page from "@/components/features-06/features-06";
@@ -15,6 +16,7 @@ export default function Home() {
       <Features02Page />
       <Features06Page />
       <Timeline05 />
+      <CTABanner />
       <FAQ07 />
       <Contact02Page />
       <Footer05Page />
