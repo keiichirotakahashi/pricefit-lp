@@ -1,3 +1,4 @@
+import FAQ07 from "@/components/faq-07/faq-07";
 import Features02Page from "@/components/features-02/features-02";
 import Features06Page from "@/components/features-06/features-06";
 import Hero02 from "@/components/hero-02/hero-02";
@@ -12,6 +13,7 @@ export default function Home() {
       <Features02Page />
       <Features06Page />
       <Timeline05 />
+      <FAQ07 />
     </div>
   );
 }
