@@ -5,29 +5,12 @@ import { cn } from "@/lib/utils";
 
 const faq = [
   {
-    question: "What is your return policy?",
-    answer:
-      "You can return unused items in their original packaging within 30 days for a refund or exchange. Contact support for assistance.",
+    question: "どの媒体をカバーしていますか？",
+    answer: "主要Webニュースサイトを中心に順次拡大予定です。",
   },
   {
-    question: "How do I track my order?",
-    answer:
-      "Track your order using the link provided in your confirmation email, or log into your account to view tracking details.",
-  },
-  {
-    question: "Do you ship internationally?",
-    answer:
-      "Yes, we ship worldwide. Shipping fees and delivery times vary by location, and customs duties may apply for some countries.",
-  },
-  {
-    question: "What payment methods do you accept?",
-    answer:
-      "We accept Visa, MasterCard, American Express, PayPal, Apple Pay, and Google Pay, ensuring secure payment options for all customers.",
-  },
-  {
-    question: "What if I receive a damaged item?",
-    answer:
-      "Please contact our support team within 48 hours of delivery with photos of the damaged item. We’ll arrange a replacement or refund.",
+    question: "通知はどのように届きますか？",
+    answer: "メールやSlack連携など、ご希望の方法で受け取れます。",
   },
 ];
 
@@ -36,10 +19,10 @@ const FAQ = () => {
     <div className="flex items-center justify-center px-6 py-12">
       <div className="w-full max-w-2xl">
         <h2 className="text-4xl md:text-5xl !leading-[1.15] font-bold tracking-tight">
-          Frequently Asked Questions
+          よくあるご質問
         </h2>
         <p className="mt-1.5 text-lg text-muted-foreground">
-          Quick answers to common questions about our products and services.
+          ClipBaseについてよくお寄せいただく質問をまとめました。
         </p>
 
         <Accordion type="single" collapsible className="mt-8 space-y-4" defaultValue="question-0">

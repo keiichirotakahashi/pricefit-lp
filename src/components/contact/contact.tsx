@@ -10,10 +10,10 @@ const Contact = () => (
   <div className="flex items-center justify-center py-16">
     <div className="w-full max-w-screen-xl mx-auto px-6 xl:px-0">
       <h2 className="mt-3 text-3xl md:text-4xl font-bold tracking-tight text-center">
-        Chat to our friendly team
+        β版無料トライアル／お問い合わせ
       </h2>
       <p className="mt-3 text-base sm:text-lg text-center">
-        We&apos;d love to hear from you. Please fill out this form or shoot us an email.
+        ClipBaseについてご質問がございましたら、お気軽にお問い合わせください。
       </p>
       <div className="flex items-center justify-center mt-10 gap-16 md:gap-10">
         {/* Form */}
@@ -22,52 +22,56 @@ const Contact = () => (
             <form>
               <div className="grid md:grid-cols-2 gap-x-8 gap-y-5">
                 <div className="col-span-2">
-                  <Label htmlFor="companyName">Company Name</Label>
+                  <Label htmlFor="companyName">企業名（必須）</Label>
                   <Input
-                    placeholder="Company Name"
+                    placeholder="企業名"
                     id="companyName"
                     className="mt-1.5 bg-white h-11 shadow-none"
+                    required
                   />
                 </div>
                 <div className="col-span-2 sm:col-span-1">
-                  <Label htmlFor="firstName">First Name</Label>
+                  <Label htmlFor="firstName">姓（必須）</Label>
                   <Input
-                    placeholder="First name"
+                    placeholder="姓"
                     id="firstName"
                     className="mt-1.5 bg-white h-11 shadow-none"
+                    required
                   />
                 </div>
                 <div className="col-span-2 sm:col-span-1">
-                  <Label htmlFor="lastName">Last Name</Label>
+                  <Label htmlFor="lastName">名（必須）</Label>
                   <Input
-                    placeholder="Last name"
+                    placeholder="名"
                     id="lastName"
                     className="mt-1.5 bg-white h-11 shadow-none"
+                    required
                   />
                 </div>
                 <div className="col-span-2">
-                  <Label htmlFor="email">Email</Label>
+                  <Label htmlFor="email">メールアドレス（必須）</Label>
                   <Input
                     type="email"
-                    placeholder="Email"
+                    placeholder="メールアドレス"
                     id="email"
                     className="mt-1.5 bg-white h-11 shadow-none"
+                    required
                   />
                 </div>
                 <div className="col-span-2">
-                  <Label htmlFor="phone">Phone</Label>
+                  <Label htmlFor="phone">電話番号</Label>
                   <Input
-                    type="phone"
-                    placeholder="Phone"
+                    type="tel"
+                    placeholder="電話番号"
                     id="phone"
                     className="mt-1.5 bg-white h-11 shadow-none"
                   />
                 </div>
                 <div className="col-span-2">
-                  <Label htmlFor="message">Message</Label>
+                  <Label htmlFor="message">お問い合わせ内容</Label>
                   <Textarea
                     id="message"
-                    placeholder="Message"
+                    placeholder="お問い合わせ内容をご記入ください"
                     className="mt-1.5 bg-white shadow-none"
                     rows={6}
                   />
@@ -75,16 +79,15 @@ const Contact = () => (
                 <div className="col-span-2 flex items-center gap-2">
                   <Checkbox id="acceptTerms" />
                   <Label htmlFor="acceptTerms">
-                    You agree to our{" "}
                     <Link href="#" className="underline">
-                      terms and conditions
+                      利用規約
                     </Link>
-                    .
+                    に同意します
                   </Label>
                 </div>
               </div>
               <Button className="mt-6 w-full" size="lg">
-                Submit
+                送信
               </Button>
             </form>
           </CardContent>
