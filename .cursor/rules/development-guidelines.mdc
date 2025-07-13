@@ -1,0 +1,88 @@
+---
+description: clipbase-lp プロジェクトの開発ガイドライン
+globs: ["**/*"]
+alwaysApply: true
+---
+
+# 開発ガイドライン
+
+## プロジェクト概要
+このプロジェクトはNext.js 15とReact 19を使用した「ClipBase」のランディングページです。
+
+## 技術スタック
+- **フレームワーク**: Next.js 15.3.5
+- **ライブラリ**: React 19, React DOM 19
+- **CSS**: Tailwind CSS v4
+- **リンター/フォーマッター**: Biome 2.1.1
+- **言語**: TypeScript 5
+
+## 開発環境のセットアップ
+
+### 依存関係のインストール
+```bash
+pnpm install
+```
+
+### 開発サーバーの起動
+```bash
+pnpm dev
+```
+- 開発サーバーがlocalhostで起動します
+- ファイルの変更時に自動リロードされます
+
+## 利用可能なコマンド
+
+### 開発関連
+- `pnpm dev` - 開発サーバーを起動
+- `pnpm build` - 本番用ビルドを作成
+- `pnpm start` - 本番サーバーを起動
+
+### コード品質管理
+- `pnpm lint` - Next.jsの標準リントを実行
+- `pnpm lint:biome` - Biomeでリントチェック
+- `pnpm lint:biome:fix` - Biomeでリント問題を自動修正
+- `pnpm format` - Biomeでコードフォーマットを実行
+- `pnpm format:check` - フォーマットチェックのみ実行
+- `pnpm check` - Biomeで全体チェック（リント + フォーマット）
+- `pnpm check:fix` - Biomeで全体チェック + 自動修正
+
+## 開発ワークフロー
+
+### 修正後の必須検証手順
+コードを修正した後は、以下の順序で検証を実行してください：
+
+1. **リンター実行**
+```bash
+pnpm check:fix
+```
+
+2. **ビルド確認**
+```bash
+pnpm build
+```
+※ビルドに失敗した場合は、エラーメッセージを確認して必要な修正を行ってください
+
+### コミット前のチェックリスト
+- [ ] `pnpm check:fix` でリント/フォーマットエラーを解決
+- [ ] `pnpm build` が成功することを確認
+
+## コーディング規約
+
+### ファイル構成
+- `src/app/` - Next.js App Routerのページとレイアウト
+- `public/` - 静的ファイル（画像、SVGなど）
+
+### スタイリング
+- Tailwind CSS v4を使用
+- ユーティリティファーストアプローチ
+- PostCSSで処理
+
+### TypeScript
+- 厳格な型チェックを有効化
+- 適切な型定義を心がける
+- any型の使用は避ける
+
+## 注意事項
+- このプロジェクトはpnpmを使用しています
+- 新しい依存関係を追加する前に、チームと相談してください
+- Biomeの設定に従ってコードスタイルを統一してください
