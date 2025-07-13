@@ -7,18 +7,18 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 
 const Contact = () => (
-  <div className="flex items-center justify-center py-16">
+  <div className="flex items-center justify-center py-8 md:py-16">
     <div className="w-full max-w-screen-xl mx-auto px-6 xl:px-0">
-      <h2 className="mt-3 text-3xl md:text-4xl font-bold tracking-tight text-center">
+      <h2 className="mt-3 text-4xl md:text-5xl font-bold tracking-tight text-center">
         β版無料トライアル／お問い合わせ
       </h2>
       <p className="mt-3 text-base sm:text-lg text-center">
         ClipBaseについてご質問がございましたら、お気軽にお問い合わせください。
       </p>
-      <div className="flex items-center justify-center mt-10 gap-16 md:gap-10">
+      <div className="flex items-center justify-center mt-10">
         {/* Form */}
-        <Card className="bg-accent shadow-none">
-          <CardContent className="p-6 md:p-10">
+        <Card className="bg-accent shadow-none w-full max-w-2xl">
+          <CardContent className="py-2 px-6 md:px-8">
             <form>
               <div className="grid md:grid-cols-2 gap-x-8 gap-y-5">
                 <div className="col-span-2">
