@@ -17,7 +17,7 @@ const problems = [
 
 const Problems = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center py-12">
+    <div className="min-h-screen flex items-center justify-center py-8 md:py-12">
       <div className="w-full">
         <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-center">
           こんなことでお困りではありませんか？

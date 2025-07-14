@@ -15,8 +15,8 @@ const steps = [
 
 export default function Flow() {
   return (
-    <div className="min-h-screen flex items-center justify-center py-12">
-      <div className="max-w-screen-sm mx-auto px-6">
+    <div className="min-h-screen flex items-center justify-center py-8 md:py-12">
+      <div className="max-w-screen-md mx-auto px-6">
         <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-center mb-16">
           3ステップでかんたんスタート
         </h2>
