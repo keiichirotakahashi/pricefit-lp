@@ -21,7 +21,7 @@ const FAQ = () => {
         <h2 className="text-4xl md:text-5xl !leading-[1.15] font-bold tracking-tight text-center">
           よくあるご質問
         </h2>
-        <p className="mt-1.5 text-lg text-muted-foreground text-center">
+        <p className="mt-6 text-lg text-muted-foreground text-center">
           ClipBaseについてよくお寄せいただく質問をまとめました。
         </p>
 
