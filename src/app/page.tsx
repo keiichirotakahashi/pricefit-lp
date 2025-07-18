@@ -10,17 +10,15 @@ import Solutions from "@/components/solutions/solutions";
 
 export default function Home() {
   return (
-    <div className="space-y-16 md:space-y-24">
+    <div className="space-y-12 md:space-y-16 lg:space-y-24">
       <Navbar />
       <Hero />
       <Problems />
       <Solutions />
       <Flow />
       <CTABanner />
-      <div className="space-y-16 md:space-y-20">
-        <FAQ />
-        <Contact />
-      </div>
+      <FAQ />
+      <Contact />
       <Footer />
     </div>
   );

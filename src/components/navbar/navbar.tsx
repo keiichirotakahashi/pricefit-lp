@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Logo } from "./logo";
 
@@ -8,7 +9,9 @@ const Navbar = () => {
         <Logo />
 
         <div className="flex items-center gap-3">
-          <Button className="rounded-full">無料トライアル</Button>
+          <Button className="rounded-full cursor-pointer">
+            <Link href="#contact">お問い合わせ</Link>
+          </Button>
         </div>
       </div>
     </nav>

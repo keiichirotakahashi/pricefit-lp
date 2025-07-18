@@ -4,25 +4,25 @@ import { Button } from "@/components/ui/button";
 
 const solutions = [
   {
-    category: "リアルタイム通知",
-    title: "即時のリアルタイム通知",
+    category: "自動化",
+    title: "Webクリッピングを自動化",
     details:
-      "プレスリリース配信後、数分以内に掲載・言及を検出し、ブラウザやSlackに即お知らせ。複数サイトを手動で巡回する手間をゼロにし、重要な反響を逃しません。",
-    tutorialLink: "#",
+      "キーワードを登録するだけで、自動的にWebの掲載情報を収集します。最大50件のキーワードを登録できるので、自社ブランドはもちろん、競合ブランドや注目テーマも見逃しません。",
+    tutorialLink: "#contact",
   },
   {
-    category: "自動クリッピング",
-    title: "自動クリッピングで記事を一元管理",
+    category: "見える化",
+    title: "広報・PR活動の成果を見える化",
     details:
-      "検知した記事は自動的に切り抜き・保存し、一覧画面でまとめて閲覧可能。記事URLや掲載日時、媒体名などのメタ情報も同時に記録されるので、後からの社内共有やレポート作成がスムーズです。",
-    tutorialLink: "#",
+      "キーワードごとの掲載数を日ごとにグラフ化するだけでなく、プレスリリース/パブリシティ分類やポジ/ネガ分析も自動化します。使い始めた日から広報・PR活動の成果を見える化します。",
+    tutorialLink: "#contact",
   },
   {
-    category: "感情分析",
-    title: "ポジ／ネガ感情分析で優先順位を可視化",
+    category: "シンプル・おトク",
+    title: "シンプルかつおトクで気軽に試せる",
     details:
-      "AIが各記事のトーンをポジティブ／ネガティブに分類し、ダッシュボードで比率や注目記事をハイライト。ネガティブ報道や好評記事を即座に把握し、次の対応や社内報告に役立てられます。",
-    tutorialLink: "#",
+      "必要な機能に絞ったシンプルな操作性で誰でも迷わずに使えます。また業界最安水準の料金（ベータ版限定で先着20社無料！）のため気軽に試すことができます。",
+    tutorialLink: "#contact",
   },
 ];
 
@@ -30,10 +30,10 @@ const Solutions = () => {
   return (
     <div className="min-h-screen flex items-center justify-center">
       <div className="max-w-screen-lg w-full py-10 px-6">
-        <h2 className="text-4xl md:text-5xl md:leading-[3.5rem] font-bold tracking-tight max-w-xl md:text-center md:mx-auto">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl md:leading-[3.5rem] font-bold tracking-tight max-w-xl md:text-center md:mx-auto">
           ClipBaseがまるごと解決
         </h2>
-        <div className="mt-8 md:mt-16 w-full mx-auto space-y-20">
+        <div className="mt-8 md:mt-16 w-full mx-auto space-y-16 md:space-y-20">
           {solutions.map((solution) => (
             <div
               key={solution.category}
@@ -44,11 +44,15 @@ const Solutions = () => {
                 <span className="uppercase font-semibold text-sm text-muted-foreground">
                   {solution.category}
                 </span>
-                <h4 className="my-3 text-3xl font-semibold tracking-tight">{solution.title}</h4>
-                <p className="text-muted-foreground text-[17px]">{solution.details}</p>
-                <Button asChild className="mt-6 rounded-full min-w-40 text-[15px]">
+                <h4 className="my-3 text-2xl md:text-3xl font-semibold tracking-tight leading-tight">
+                  {solution.title}
+                </h4>
+                <p className="text-muted-foreground text-base md:text-[17px] leading-relaxed">
+                  {solution.details}
+                </p>
+                <Button asChild className="mt-6 rounded-full min-w-40 text-[15px] cursor-pointer">
                   <Link href={solution.tutorialLink}>
-                    詳しく見る <ArrowRight />
+                    お問い合わせ <ArrowRight />
                   </Link>
                 </Button>
               </div>

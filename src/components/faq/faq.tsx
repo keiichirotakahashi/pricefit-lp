@@ -5,27 +5,34 @@ import { cn } from "@/lib/utils";
 
 const faq = [
   {
-    question: "どの媒体をカバーしていますか？",
-    answer: "主要Webニュースサイトを中心に順次拡大予定です。",
+    question: "登録できるキーワード数は？",
+    answer:
+      "ベータ版では50件のキーワードの登録が可能です。ベータ版終了後は変動する可能性があります。",
   },
   {
-    question: "通知はどのように届きますか？",
-    answer: "メールやSlack連携など、ご希望の方法で受け取れます。",
+    question: "どの媒体をモニタリングしていますか？",
+    answer: "国内の主要Webニュースサイトを中心に、順次拡大予定です。",
+  },
+  {
+    question: "料金体系はどうなっていますか？",
+    answer:
+      "ベータ版期間は先着20社限定で無料でご利用いただけます。20社を超えるお申し込みがあった場合も、業界最安水準での提供を予定しております。",
+  },
+  {
+    question: "ベータ版の期間はいつまでですか？",
+    answer: "現時点ではベータ版終了の時期は定めておりません。",
   },
 ];
 
 const FAQ = () => {
   return (
-    <div className="flex items-center justify-center px-6 py-8 md:py-12">
+    <div className="flex items-center justify-center px-6 py-6 md:pt-20 md:pb-10">
       <div className="w-full max-w-2xl">
-        <h2 className="text-4xl md:text-5xl !leading-[1.15] font-bold tracking-tight text-center">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl !leading-[1.15] font-bold tracking-tight text-center">
           よくあるご質問
         </h2>
-        <p className="mt-6 text-lg text-muted-foreground text-center">
-          ClipBaseについてよくお寄せいただく質問をまとめました。
-        </p>
 
-        <Accordion type="single" collapsible className="mt-8 space-y-4" defaultValue="question-0">
+        <Accordion type="single" collapsible className="mt-8 space-y-4">
           {faq.map(({ question, answer }, index) => (
             <AccordionItem
               key={question}
@@ -35,7 +42,7 @@ const FAQ = () => {
               <AccordionPrimitive.Header className="flex">
                 <AccordionPrimitive.Trigger
                   className={cn(
-                    "flex flex-1 items-center justify-between py-4 font-semibold tracking-tight transition-all hover:underline [&[data-state=open]>svg]:rotate-45",
+                    "flex flex-1 items-center justify-between py-4 font-semibold tracking-tight transition-all cursor-pointer [&[data-state=open]>svg]:rotate-45",
                     "text-start text-lg"
                   )}
                 >

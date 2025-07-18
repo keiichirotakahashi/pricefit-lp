@@ -4,39 +4,42 @@ import TimeConsuming from "./time-consuming";
 
 const problems = [
   {
-    title: "手作業の時間浪費",
+    title: "自社掲載記事の収集に\n多くの時間を費やしている",
     description:
-      "毎日何時間もブラウザを開いて複数サイトを巡回し、掲載記事を探すだけで丸一日が終わってしまう…",
+      "プレスリリースの転載や自社掲載記事を手作業で収集するのに忙しく、競合の動向やトレンドを把握することができない",
     Illustration: TimeConsuming,
   },
   {
-    title: "ネガティブ情報の見逃し",
-    description: "重大な悪評やクレーム記事を後から発見し、炎上対応やリカバリーに追われる事態に。",
+    title: "広報・PR活動の効果測定ができていない",
+    description:
+      "時間軸での掲載数比較やポジティブ／ネガティブ評価などの分析が難しく、広報・PR業務の成果が見えづらい",
     Illustration: Backlash,
   },
   {
-    title: "導入コストの壁",
+    title: "既存のツールは複雑かつ\n高価で導入ハードルが高い",
     description:
-      "高額な大手ツールは初期費用も月額も重く、予算の限られた中小広報では手が出しにくい。",
+      "既存のツールは高機能ゆえに設定や運用が煩雑で、価格も高額なため気軽に試すことができない",
     Illustration: SmallBudget,
   },
 ];
 
 const Problems = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center py-8 md:py-12">
-      <div className="w-full">
-        <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-center">
-          こんなことでお困りではありませんか？
+    <div className="min-h-screen flex items-center justify-center">
+      <div className="max-w-screen-lg w-full py-8 md:py-12 px-6 md:px-0">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-center leading-tight">
+          広報・PRでこんなお悩みはありませんか？
         </h2>
         <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12 max-w-md sm:max-w-screen-md lg:max-w-screen-lg w-full mx-auto px-6">
           {problems.map((problem) => (
             <div key={problem.title} className="flex flex-col text-start">
-              <div className="flex items-center justify-center mb-5 sm:mb-6 w-full p-5 min-h-[220px]">
+              <div className="flex items-center justify-center mb-4 sm:mb-6 w-full p-5 min-h-[220px]">
                 <problem.Illustration />
               </div>
-              <h3 className="text-2xl font-semibold tracking-tight text-center">{problem.title}</h3>
-              <p className="mt-2  text-muted-foreground text-[17px] text-center">
+              <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-center leading-tight whitespace-pre-line">
+                {problem.title}
+              </h3>
+              <p className="mt-3 text-muted-foreground text-base sm:text-[17px] text-center leading-relaxed">
                 {problem.description}
               </p>
             </div>

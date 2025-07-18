@@ -13,7 +13,10 @@ const Contact = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   return (
-    <div className="min-h-screen flex items-center justify-center py-8 md:py-12">
+    <div
+      id="contact"
+      className="min-h-screen flex items-center justify-center py-6 md:pt-20 md:pb-10"
+    >
       <div className="w-full max-w-screen-xl mx-auto px-6 xl:px-0">
         <iframe
           name="hidden_iframe"
@@ -25,23 +28,25 @@ const Contact = () => {
 
         {!isSubmitted && (
           <>
-            <h2 className="mt-3 text-4xl md:text-5xl font-bold tracking-tight text-center">
-              β版無料トライアル／お問い合わせ
+            <h2 className="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-center">
+              お問い合わせ
             </h2>
-            <p className="mt-3 text-base sm:text-lg text-center">
-              ClipBaseについてご質問がございましたら、お気軽にお問い合わせください。
+            <p className="mt-3 text-base sm:text-lg text-muted-foreground text-center">
+              ClipBaseの無料ベータ版へのお申し込みは下記より受け付けております。
+              <br />
+              その他のご質問などもお気軽にお問い合わせください。
             </p>
-            <div className="flex items-center justify-center mt-10">
+            <div className="flex items-center justify-center mt-4 md:mt-6">
               {/* Form */}
               <Card className="bg-accent shadow-none w-full max-w-2xl">
-                <CardContent className="py-2 px-6 md:px-8">
+                <CardContent className="px-4 md:px-6">
                   <form
                     action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfKcj633lMdi_6jFX9hEObNajx6VbdqtEn1QtqDMpO19OPt1g/formResponse"
                     method="POST"
                     target="hidden_iframe"
                     onSubmit={() => setIsSubmitting(true)}
                   >
-                    <div className="grid md:grid-cols-2 gap-x-8 gap-y-5">
+                    <div className="grid md:grid-cols-2 gap-x-6 gap-y-5">
                       <div className="col-span-2">
                         <Label htmlFor="companyName">企業名（必須）</Label>
                         <Input
@@ -84,13 +89,14 @@ const Contact = () => {
                         />
                       </div>
                       <div className="col-span-2">
-                        <Label htmlFor="phone">ご連絡がつきやすい携帯番号</Label>
+                        <Label htmlFor="phone">ご連絡がつきやすい携帯番号（必須）</Label>
                         <Input
                           type="tel"
                           placeholder="電話番号"
                           id="phone"
                           name="entry.1644352446"
                           className="mt-1.5 bg-white h-11 shadow-none"
+                          required
                         />
                       </div>
                       <div className="col-span-2">
@@ -119,7 +125,7 @@ const Contact = () => {
                     <Button
                       type="submit"
                       disabled={isSubmitting}
-                      className="mt-6 w-full disabled:cursor-not-allowed"
+                      className="mt-6 w-full disabled:cursor-not-allowed cursor-pointer"
                       size="lg"
                     >
                       {isSubmitting ? "送信中..." : "送信"}
