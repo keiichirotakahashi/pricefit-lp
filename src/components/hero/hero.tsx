@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -6,7 +7,7 @@ import { Button } from "@/components/ui/button";
 const Hero = () => {
   return (
     <div className="min-h-screen flex items-center justify-center pt-20">
-      <div className="max-w-screen-xl w-full mx-auto grid lg:grid-cols-2 gap-12 px-6 py-12">
+      <div className="max-w-screen-xl w-full mx-auto grid lg:grid-cols-2 gap-12 items-center px-6 py-12">
         <div>
           <Badge className="bg-gradient-to-br via-70% from-primary via-muted/30 to-primary rounded-full py-1 border-none">
             ベータ版無料提供中！
@@ -27,7 +28,16 @@ const Hero = () => {
             </Button>
           </div>
         </div>
-        <div className="w-full aspect-video bg-accent rounded-xl" />
+        <div className="w-full relative">
+          <Image
+            src="/clipbase-screen.png"
+            alt="Hero"
+            layout="responsive"
+            width={2876}
+            height={1620}
+            className="border border-border/50 rounded-xl"
+          />
+        </div>
       </div>
     </div>
   );
