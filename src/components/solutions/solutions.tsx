@@ -36,7 +36,7 @@ const Solutions = () => {
   return (
     <div className="min-h-screen flex items-center justify-center">
       <div className="max-w-screen-lg w-full py-8 md:py-12 px-6">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl md:leading-[3.5rem] font-bold tracking-tight max-w-xl md:text-center md:mx-auto">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl md:leading-[3.5rem] font-bold tracking-tight max-w-xl text-center md:mx-auto">
           ClipBaseがまるごと解決
         </h2>
         <div className="mt-10 md:mt-16 w-full mx-auto space-y-12 md:space-y-16 lg:space-y-20">

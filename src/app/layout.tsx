@@ -22,7 +22,8 @@ const notoSansJP = Noto_Sans_JP({
 
 export const metadata: Metadata = {
   title: "Webクリッピングツール「ClipBase（クリップベース）」",
-  description: "ClipBaseは業界最安水準で利用できるWebクリッピングツールです。広報・PR業務の自動化や効果測定を、おトクに、カンタンに始められます。",
+  description:
+    "ClipBaseは業界最安水準で利用できるWebクリッピングツールです。広報・PR業務の自動化や効果測定を、おトクに、カンタンに始められます。",
 };
 
 export default function RootLayout({
@@ -36,9 +37,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${notoSansJP.variable} antialiased`}
       >
         {children}
-        {GA_ID && (
-          <GoogleAnalytics gaId={GA_ID} />
-        )}
+        {GA_ID && <GoogleAnalytics gaId={GA_ID} />}
       </body>
     </html>
   );

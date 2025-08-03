@@ -7,7 +7,7 @@ import { Button } from "../ui/button";
 export default function CTABanner() {
   return (
     <div className="px-6">
-      <div className="dark:border relative overflow-hidden my-16 mb-20 md:mb-32 w-full dark bg-background text-foreground max-w-screen-lg mx-auto rounded-2xl py-8 md:py-12 lg:py-16 px-6 md:px-14">
+      <div className="dark:border relative overflow-hidden mt-16 md:mt-24 mb-40 w-full dark bg-background text-foreground max-w-screen-lg mx-auto rounded-2xl py-8 md:py-12 lg:py-16 px-6 md:px-14">
         <AnimatedGridPattern
           numSquares={30}
           maxOpacity={0.1}

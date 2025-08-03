@@ -26,7 +26,7 @@ const faq = [
 
 const FAQ = () => {
   return (
-    <div className="flex items-center justify-center px-6 py-6 md:pt-20 md:pb-10">
+    <div className="flex items-center justify-center px-6 py-6 md:pt-20 md:pb-16">
       <div className="w-full max-w-2xl">
         <h2 className="text-3xl md:text-4xl lg:text-5xl !leading-[1.15] font-bold tracking-tight text-center">
           よくあるご質問
