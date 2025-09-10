@@ -32,13 +32,11 @@ const Contact = () => {
               お問い合わせ
             </h2>
             <p className="mt-3 text-base sm:text-lg text-muted-foreground text-center">
-              ClipBaseの無料ベータ版へのお申し込みは下記より受け付けております。
-              <br />
-              その他のご質問などもお気軽にお問い合わせください。
+              PriceFitの無料ベータ版へのお申し込みは下記より受け付けております。ご質問もこちらから承ります。
             </p>
             <div className="flex items-center justify-center mt-4 md:mt-6">
               {/* Form */}
-              <Card className="bg-accent shadow-none w-full max-w-2xl">
+              <Card className="bg-accent shadow-none w-full max-w-2xl border border-[#C9C9E6]">
                 <CardContent className="px-4 md:px-6">
                   <form
                     action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfKcj633lMdi_6jFX9hEObNajx6VbdqtEn1QtqDMpO19OPt1g/formResponse"
@@ -53,7 +51,7 @@ const Contact = () => {
                           placeholder="企業名"
                           id="companyName"
                           name="entry.787755629"
-                          className="mt-1.5 bg-white h-11 shadow-none"
+                          className="mt-1.5 bg-white h-11 shadow-none border border-[#C9C9E6]"
                           required
                         />
                       </div>
@@ -63,7 +61,7 @@ const Contact = () => {
                           placeholder="姓"
                           id="firstName"
                           name="entry.79100113"
-                          className="mt-1.5 bg-white h-11 shadow-none"
+                          className="mt-1.5 bg-white h-11 shadow-none border border-[#C9C9E6]"
                           required
                         />
                       </div>
@@ -73,7 +71,7 @@ const Contact = () => {
                           placeholder="名"
                           id="lastName"
                           name="entry.138592366"
-                          className="mt-1.5 bg-white h-11 shadow-none"
+                          className="mt-1.5 bg-white h-11 shadow-none border border-[#C9C9E6]"
                           required
                         />
                       </div>
@@ -84,7 +82,7 @@ const Contact = () => {
                           placeholder="メールアドレス"
                           id="email"
                           name="entry.427198006"
-                          className="mt-1.5 bg-white h-11 shadow-none"
+                          className="mt-1.5 bg-white h-11 shadow-none border border-[#C9C9E6]"
                           required
                         />
                       </div>
@@ -95,7 +93,7 @@ const Contact = () => {
                           placeholder="電話番号"
                           id="phone"
                           name="entry.1644352446"
-                          className="mt-1.5 bg-white h-11 shadow-none"
+                          className="mt-1.5 bg-white h-11 shadow-none border border-[#C9C9E6]"
                           required
                         />
                       </div>
@@ -105,14 +103,14 @@ const Contact = () => {
                           id="message"
                           name="entry.924463901"
                           placeholder="お問い合わせ内容をご記入ください"
-                          className="mt-1.5 bg-white shadow-none"
+                          className="mt-1.5 bg-white shadow-none border border-[#C9C9E6]"
                           rows={6}
                         />
                       </div>
                       <div className="col-span-2 flex items-center gap-2">
                         <p className="text-[0.8rem] text-muted-foreground">
                           「送信」を押すことで
-                          <Link href="/privacy" target="_blank" className="underline">
+                          <Link href="/privacy" target="_blank" className="underline text-primary">
                             プライバシーポリシー
                           </Link>
                           に同意するものとします。
@@ -120,7 +118,7 @@ const Contact = () => {
                       </div>
                     </div>
 
-                    <input type="hidden" name="entry.331312095" value="ClipBase" />
+                    <input type="hidden" name="entry.331312095" value="PriceFit" />
 
                     <Button
                       type="submit"

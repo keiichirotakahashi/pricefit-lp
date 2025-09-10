@@ -1,7 +1,7 @@
-# ClipBase LP - 開発ガイドライン
+# PriceFit LP - 開発ガイドライン
 
 ## プロジェクト概要
-Next.js 15とReact 19を使用した「ClipBase」のランディングページ開発プロジェクト
+Next.js 15とReact 19を使用した「PriceFit」のランディングページ開発プロジェクト
 
 ## 技術スタック
 - **フレームワーク**: Next.js 15.3.5

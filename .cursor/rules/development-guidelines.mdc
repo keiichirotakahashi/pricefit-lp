@@ -1,5 +1,5 @@
 ---
-description: clipbase-lp プロジェクトの開発ガイドライン
+description: pricefit-lp プロジェクトの開発ガイドライン
 globs: ["**/*"]
 alwaysApply: true
 ---
@@ -7,7 +7,7 @@ alwaysApply: true
 # 開発ガイドライン
 
 ## プロジェクト概要
-このプロジェクトはNext.js 15とReact 19を使用した「ClipBase」のランディングページです。
+このプロジェクトはNext.js 15とReact 19を使用した「PriceFit」のランディングページです。
 
 ## 技術スタック
 - **フレームワーク**: Next.js 15.3.5

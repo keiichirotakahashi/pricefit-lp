@@ -3,8 +3,9 @@ import Footer from "@/components/footer/footer";
 import Navbar from "@/components/navbar/navbar";
 
 export const metadata: Metadata = {
-  title: "プライバシーポリシー | ClipBase（クリップベース）",
-  description: "Webクリッピングツール「ClipBase（クリップベース）」のプライバシーポリシーです。",
+  title: "プライバシーポリシー | PriceFit（プライスフィット）",
+  description:
+    "EC向け価格調査自動化ツール「PriceFit（プライスフィット）」のプライバシーポリシーです。",
 };
 
 const PrivacyPage: NextPage = () => {
@@ -190,7 +191,7 @@ const PrivacyPage: NextPage = () => {
           </div>
 
           <div className="mt-12 pt-8 border-t border-border">
-            <p className="text-muted-foreground text-sm mb-2">2025年8月1日制定</p>
+            <p className="text-muted-foreground text-sm mb-2">2025年9月1日制定</p>
             <p className="text-muted-foreground text-sm">以上</p>
           </div>
         </div>

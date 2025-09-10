@@ -1,7 +1,7 @@
-# ClipBase LP - 開発ガイドライン (for Gemini)
+# PriceFit LP - 開発ガイドライン (for Gemini)
 
 ## プロジェクト概要
-このプロジェクトは、Next.js 15とReact 19を使用したメディアモニタリングツール「ClipBase」のランディングページです。
+このプロジェクトは、Next.js 15とReact 19を使用したメディアモニタリングツール「PriceFit」のランディングページです。
 
 ## 技術スタック
 - **フレームワーク**: Next.js 15.3.5

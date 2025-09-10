@@ -21,9 +21,9 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: "Webクリッピングツール「ClipBase（クリップベース）」",
+  title: "EC向け価格調査自動化ツール「PriceFit（プライスフィット）」",
   description:
-    "ClipBaseは業界最安水準で利用できるWebクリッピングツールです。広報・PR業務の自動化や効果測定を、おトクに、カンタンに始められます。",
+    "PriceFitは業界最安水準で利用できる価格調査自動化ツールです。各種ECサイトにおける価格調査の自動化を、おトクに、カンタンに始められます。",
 };
 
 export default function RootLayout({
