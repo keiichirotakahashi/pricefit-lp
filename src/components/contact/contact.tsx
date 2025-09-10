@@ -146,15 +146,12 @@ const Contact = () => {
               以下よりご希望の日時をお知らせください。
             </p>
             <div className="mt-6">
-              <div
-                data-url="https://app.spirinc.com/external/teams/JvHb83wcLmKTWKx5uoUMM/availability-sharings/f5L6RTcHjm24Na0g4XNOw/confirm"
-                className="spir-widget h-[600px] md:max-w-4xl mx-auto"
-              ></div>
-              <script
-                type="text/javascript"
-                src="https://app.spirinc.com/js/external/iframe.js"
-                async
-              ></script>
+              <iframe
+                title="Google Calendar"
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ27BPyTMPxeKzWWX3QUJABPGy1VubWrv3TM2Aseb7vof6vel7jK20cImbPsXEpE8MjAJ4BDYn6-?gv=true"
+                width="100%"
+                height="600"
+              ></iframe>
             </div>
           </div>
         )}
