@@ -7,7 +7,7 @@ export default function TimeConsuming() {
       className="w-full h-full"
       preserveAspectRatio="xMidYMid meet"
     >
-      <g clip-path="url(#clip0_589_2103)">
+      <g clipPath="url(#clip0_589_2103)">
         <path
           d="M101.129 198.797L99.9603 293.469C99.9603 293.469 99.7615 295.211 102.597 296.12C105.432 297.029 109.177 295.107 109.177 295.107L119.231 204.97L101.134 198.797H101.129Z"
           fill="#231815"
